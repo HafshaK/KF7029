@@ -1,0 +1,849 @@
+/* Styles by Hafsha Kabir - Last modified on 27 October, 2023 */
+/* Reset default styles for margins and padding */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('../fonts/Roboto-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'logo-font';
+  src: url('../fonts/logo-font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'roboto',sans-serif, Arial;
+    line-height: 1.6;
+	display: flex;
+    flex-direction: column;
+	background-color: #3D3D3D;
+	color: #00FF00;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Poppins', sans-serif, Arial;
+	color: #000;
+}
+
+/* Page Banner */
+
+.page-banner {
+    position: fixed;
+
+    width: 100%;	
+    z-index: 100; 
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #00FF00;
+	padding: 0;
+	height: 50px;
+
+}
+
+.grid-container-banner {
+	
+    display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 2fr 1fr;
+}
+
+
+.grid-item-logo {
+  text-align: left;
+  font-family: 'logo-font', sans-serif;
+  font-size: 2.3rem;
+  padding: 15px;
+  padding-left: 30px;
+}
+
+
+a.logo {
+    text-decoration: none; 
+    color: #00FF00;
+}
+
+a.logo:hover {
+	color: #00FF00;
+	text-shadow: 
+		1px 1px 0 #53464F, 
+		-1px -1px 0 #53464F, 
+		1px -1px 0 #53464F, 
+		-1px 1px 30px #53464F;
+}
+
+
+.grid-item-login {
+	text-align: right;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #00FF00;
+	padding: 15px;
+	padding-right:30px;
+}
+
+a.login {
+    text-decoration: none; 
+	color: #00FF00;
+	padding-right: 0.2rem;
+}
+
+a.login:hover {
+	color: #FFFFFF;
+}
+
+/* Navigational menu */
+nav ul {
+    list-style: none;
+	height: 45px;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 0.5rem;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+nav li {
+    margin: 0 50px;
+}
+
+@media (max-width: 600px) {
+	nav li {
+		margin: 0 25px;
+	}
+}
+
+.menu-style {
+	text-decoration : none;
+	font-size : 1rem;
+	color: #00FF00;
+}
+
+.menu-style:hover {
+	
+	text-decoration : none;
+	font-size : 1.25rem;
+	text-shadow: 
+		0.5px 0.5px 0 #9290C3, 
+		-0.5px -0.5px 0 #9290C3, 
+		0.5px -0.5px 0 #9290C3, 
+		-0.5px 0.5px 10px #9290C3;	
+	
+}
+
+.content-area {
+	margin-top: 45px;
+	flex: 1;
+	background-color: #3D3D3D;
+	color: #00FF00;
+}
+
+main  {
+	
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	color: #00FF00;
+}
+
+
+
+/* Top Image*/
+
+.top-container {
+	height: 400px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.top-image {
+	width: 100%; 
+	height: 100%; 
+	object-fit: cover;
+	opacity: 0.7;
+	
+}
+
+.overlay-text {
+    position: absolute;
+	background-color: #00000099;
+	font-size: 2rem;
+	width: 75%; 
+	height: 400px; 
+	padding: 50px;
+	font-family: sans-serif;
+}
+
+.overlay-text .head-line {
+	font-size: 2.5rem;
+	color: #000000AA;
+	text-shadow: 
+		0.5px 0.5px 0 #FAB8DB, 
+		-0.5px -0.5px 0 #FAB8DB, 
+		0.5px -0.5px 0 #FAB8DB, 
+		-0.5px 0.5px 0 #FAB8DB;
+}
+
+.overlay-text .para-line {
+	font-size: 1.3rem;
+	padding-left: 20px;
+	color: #FFFFFFFF;
+	text-shadow: 
+		0.5px 0.5px 5px #FAB8DB, 
+		-0.5px -0.5px 0 #FAB8DB, 
+		0.5px -0.5px 0 #FAB8DB, 
+		-0.5px 0.5px 0 #FAB8DB;
+
+}
+
+.overlay-text .button-line {
+	position: absolute; 
+    padding: 10px;
+	padding-left: 30px;
+	padding-right : 30px;
+	text-align: center;
+	font-size: 1rem;
+	background-color: #070F2B15;
+	color: #9290C3;
+	bottom: 10%;
+	box-shadow: 
+		2px 2px 15px #FFFFFF66, 
+		-0.5px -0.5px 0 #FFFFFF66;
+	border-radius: 20px;
+	justify-content: center;
+    align-items: center;
+	text-align: center;
+}
+
+.find-more {
+	text-decoration : none;
+	color: #9290C3;
+	font-weight: bold;
+	justify-content: center;
+    align-items: center;
+	text-align: center;
+}
+
+.button-line:hover {
+	text-decoration : none;
+	font-size : 16px;
+	background-color: #9290C3;
+}
+
+.button-line:hover .find-more {
+	text-decoration : none;
+	color: #000;
+	font-weight: bold;
+}
+
+#top-tag {
+	color: #FFF;
+}
+
+@media (max-width: 600px) {
+	
+.top-container {
+	height: 200px;	
+}
+
+.overlay-text {
+	height: 200px; 
+	padding: 25px;
+}
+
+.overlay-text .head-line {
+	font-size: 1.25rem;
+}
+
+.overlay-text .para-line {
+	font-size: 0.8rem;
+	padding-left: 30px;
+}
+
+.overlay-text .button-line {
+	font-size: 0.8rem;
+	background-color: #070F2B15;
+}
+
+}
+
+
+
+
+/*Practice Menu section Style and Quiz menu section Style*/
+
+.upcoming-events-container {
+		width: 100%;
+		margin: 3rem;
+		margin-top: 5rem;
+		background: linear-gradient(to bottom right, #070F2B30 0%,  #070F2B00 40%);
+		border-radius: 20px;	
+}
+
+.practice-menu-container {
+		width: 100%;
+		margin: 3rem;
+		margin-top: 1rem;
+		background: linear-gradient(to bottom right, #070F2B30 0%,  #070F2B00 40%);
+		border-radius: 20px;	
+}
+
+.practice-menu-heading {
+	font-size: 1.3rem;
+	margin: 50px;
+	margin-bottom: 10px;
+	color: #9290C3;
+}
+
+.practice-menu {
+    display: flex;
+	flex-wrap: wrap; 
+    justify-content: center;
+    margin: 20px; 
+	overflow: hidden; 
+}
+
+.event-box {
+	border-radius: 20px;
+	margin: 20px; 
+	width:20%;
+	height: 100%;
+	
+	background-color: #FFF;
+	box-shadow: 
+		2px 2px 5px #000, 
+		-0.5px -0.5px 0 #000;
+	
+}
+
+
+
+.event-image {
+	border-radius: 10px;
+	width: 100%;
+	height: 150px; 
+	object-fit: cover;
+}
+
+.artist-image {
+	width: 70%; 
+    height: 70%; 
+	border-radius: 50%;
+	padding: 1rem;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.event-box:hover .artist-image {
+	width: 40%; 
+    height: 40%; 
+	border-radius: 50%;
+	padding: 1rem;
+	overflow: hidden;
+}
+
+.event-name {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 1rem;
+	font-weight: bold;
+	font-size : 1rem;
+	color : #070F2B;
+}
+
+.event-date {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size : 0.8rem;
+	display: none;
+}
+
+
+.event-url {
+	display: none;
+	box-sizing: border-box;
+	text-decoration:none;
+	position: relative; 
+	justify-content: center;
+    align-items: center;
+    padding: 10px;
+	padding-left: 30px;
+	padding-right : 30px;
+	font-size: 1rem;
+	color: #000;
+	background-color: #00BCD4;
+	box-shadow: 
+		2px 2px 2px #000, 
+		-0.5px -0.5px 0 #000;
+	border-radius: 0 0 20px 20px;
+	width: 100%;
+	font-weight: bold;
+
+}
+
+.detail-link {
+	display: none;
+	background: #00000000;
+    border: #00000000;
+	width: 100%;
+	box-sizing: border-box;
+	text-decoration:none;
+	position: relative; 
+	justify-content: center;
+    align-items: center;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right : 30px;
+    margin: 0;
+    font: 1.2rem;
+    color: #070F2B;
+}
+.event-box:hover {
+	background-color: #070F2B55;
+	font-weight: bold;
+}
+.event-box:hover .event-date {
+	display: block;
+}
+
+.event-box:hover .detail-link {
+	display: flex;
+}
+
+
+.event-box:hover .event-url {
+	display: flex;
+}
+
+.event-box .event-url:hover {
+	background-color: #070F2B;
+}
+
+.event-box .detail-link:hover {
+	color: #00BCD4;
+}
+
+.upcoming-events-url {
+	display: flex;
+	position: relative; 
+	justify-content: center;
+    align-items: center;
+    padding: 10px;
+	padding-left: 30px;
+	padding-right : 30px;
+}
+
+.more-url {
+    justify-content: center; 
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	font-size: 1rem;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #070F2B;
+}
+
+.more-url:hover {
+	color: #9290C3;
+}
+
+ .artist-desc {
+	padding: 2rem;
+	padding-top: 0;
+	font-size : 0.8rem;
+	display: none;
+}
+
+.event-box:hover .artist-desc {
+	display: block;    
+    overflow: hidden;         
+    text-overflow: ellipsis;  
+    max-width: 100%;
+    display: block;
+    white-space: normal;  
+    height: 3em; 
+
+}
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+	bottom: 0;
+	width: 100%;
+    color: #008000;
+    text-align: center;
+    padding: 1rem;
+	margin-top: 10px;
+	position: relative;
+}
+
+.tagline {
+	padding-left: 0.5rem;
+	font-family: Segoe script, Arial, sans-serif;
+	font-size: 1rem;
+}
+
+a.tagline  {
+	text-decoration: none; 
+    color: #008000
+}
+
+a.tagline:hover {
+	color: #008000;
+}
+
+.page-footer {
+	display: flex;	
+    justify-content: center;
+	overflow: hidden; 
+	margin-top: 1rem;
+}
+
+
+.page-footer .column {
+	text-align: left;
+	font-size: 0.7rem;
+	padding-left: 7rem;
+	padding-right: 7rem;
+}
+
+@media (max-width: 1000px) {
+	.page-footer .column {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+}
+
+.footer-title {
+	text-align: left;
+	font-size: 0.8rem;
+}
+
+.footer-links {
+	text-decoration: none;
+	color: #008000
+}
+
+
+.footer-links:hover {
+	text-decoration: none;
+	color: #00BCD4
+}
+
+
+ /* Forms pages styling*/ 
+ 
+ .source-details
+ {
+	width: 950px;
+	margin-left: 10%;
+ }
+ 
+ .details-highlight {
+	 color: #FF1493;
+ }
+ 
+ .game-form {
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+	margin-bottom: 50px; 
+	overflow: hidden; 
+	height: 400px;
+
+}
+
+
+fieldset {
+	background-color: #070F2B55;
+	border-radius: 20px;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-shadow: 
+		2px 2px 5px #000, 
+		-0.5px -0.5px 0 #000;
+}
+
+
+legend {
+	text-align: center;
+	font-size: 1.5rem;
+    padding-top: 60px;
+	color: #070F2B;
+}
+
+
+input {
+    width: 180px;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left:15px;
+	padding-right: 15px;
+    border-radius: 20px;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #D6FAFF;
+    color: #000;
+    padding: 5px;
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#password:hover + .tooltip {
+    display: flex;
+}
+#year_op {
+	width: 100px;
+}
+
+
+label {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+/*Styling for the alert buttom display*/
+
+.submit-button {
+	display: flex;
+	width: 200px;
+	text-decoration:none;
+	position: relative; 
+	justify-content: center;
+    align-items: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	font-size: 1rem;
+	color: #00FF00;
+	background-color: #000000;
+	box-shadow: 
+		2px 2px 2px #000, 
+		-0.5px -0.5px 0 #000;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.submit-button:hover {
+	color: #000000;
+	background-color: #00FF00;
+	padding-top: 9px;
+	padding-bottom: 30px;
+	font-size: 1.2rem;
+}
+
+.game-button {
+	display: flex;
+	width: 200px;
+	text-decoration:none;
+	position: relative; 
+	justify-content: center;
+    align-items: center;
+	margin-top: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 1rem;
+	color: #00FF00;
+	background-color: #000000;
+	box-shadow: 
+		2px 2px 2px #000, 
+		-0.5px -0.5px 0 #000;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.game-button:hover {
+	color: #000000;
+	background-color: #00FF00;
+	font-size: 1.2rem;
+}
+
+
+
+
+
+.game-alert {
+    display: flex;
+	gap: 10px; 
+	flex-direction: column;
+    justify-content: center;
+	text-align: center;
+	align-items: center;
+    margin: 50px; 
+    margin-bottom: 50px; 
+	width: 500px;
+    border: 2px solid #00FF00;
+    background-color: #00FF0025;
+    padding: 20px;
+    overflow: hidden; 
+    color: #000;
+	border-radius: 20px;
+}
+.game-alert-heading {	
+	font-size: 1.2rem;
+	justify-content: center;
+	text-align: center;
+	color: #00FF00;
+	font-family: sans-serif;
+}
+
+.red-alert {
+    display: flex;
+	gap: 10px; 
+	flex-direction: column;
+    justify-content: center;
+	text-align: center;
+	align-items: center;
+    margin: 50px; 
+    margin-bottom: 50px; 
+	width: 500px;
+    border: 2px solid #9290C3;
+    background-color: #9290C325;
+    padding: 20px;
+    overflow: hidden; 
+    color: #000;
+	border-radius: 20px;
+}
+.red-alert-heading {	
+	font-size: 1.2rem;
+	justify-content: center;
+	text-align: center;
+	color: #9290C3;
+	font-family: sans-serif;
+}
+.green-alert {
+	display: flex;
+	gap: 10px; 
+	flex-direction: column;
+    justify-content: center;
+	text-align: center;
+	align-items: center;
+    margin: 50px; 
+	width: 500px;
+    border: 2px solid #070F2B;
+    background-color: #070F2B25;
+    padding: 10px;
+    overflow: hidden; 
+    color: #000;
+	border-radius: 20px;
+}
+
+
+
+.green-alert-heading {	
+	font-size: 1.2rem;
+	justify-content: center;
+	text-align: center;
+	color: #070F2B;
+	font-family: sans-serif;
+}
+
+.credits {
+	padding: 50px;
+	width: 100%;
+}
+
+.credits-list {
+	width: 100%;
+	font-size: 0.3rem;
+
+}
+/*Hovering instructions*/
+
+    .example {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* Add a dotted underline to indicate tooltip */
+        cursor: help; /* Change cursor to pointer to indicate hoverable element */
+    }
+	
+	.example:hover {
+		color: #FF1493;
+	}
+
+    /* Tooltip text */
+    .example .exampletext {
+        visibility: hidden; /* Hide the tooltip by default */
+        width: 250px;
+		font-size: 0.8rem;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 125%; /* Position the tooltip above the element */
+        left: 50%;
+        margin-left: -100px; /* Center the tooltip */
+        opacity: 0; /* Start with 0 opacity, will be visible on hover */
+        transition: opacity 0.3s; /* Add a transition effect (opacity) */
+    }
+	
+	.example .examplehint {
+        visibility: hidden; /* Hide the tooltip by default */
+        width: 800px;
+		font-size: 0.8rem;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 125%; /* Position the tooltip above the element */
+        left: 50%;
+        margin-left: -100px; /* Center the tooltip */
+        opacity: 0; /* Start with 0 opacity, will be visible on hover */
+        transition: opacity 0.3s; /* Add a transition effect (opacity) */
+    }
+
+    /* Show the tooltip text when hovering */
+    .example:hover .exampletext {
+        visibility: visible;
+        opacity: 1;
+    }
+	.example:hover .examplehint {
+        visibility: visible;
+        opacity: 1;
+    }
+	.subtext {
+		color: #FF1493;
+	}
+	
+	.quiz-area {
+		width: 100%;
+		height: 100%;
+	
+	}
